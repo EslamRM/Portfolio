@@ -1,0 +1,57 @@
+{% load static %} {% load icon %} {% block content %}
+<div class="container mx-auto pt-20 sm:pt-40 pb-8" id="footer" data-aos="zoom-out">
+    <div class="flex flex-col justify-center items-center mb-12 sm:mb-28 p-10 rounded-full dark-mode" style="background-color: ghostwhite;">
+        <p
+            class="text-3xl sm:text-4xl font-semibold text-primary-dark dark:text-primary-light mb-5"
+        >
+        Reach Out To Me!
+        </p>
+        <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light lowecase">
+            Discuss A Project Or Just Want To Say Hi, Or Anything , My Inbox Is Open For All
+        </p>
+        <img src="{% static 'images/eslam.jpg' %}" class="rounded-full m-5 w-40">
+        <ul class="flex gap-4 sm:gap-8">
+            <a
+                href="https://github.com/NangialaiStoman"
+                target="__blank"
+                class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg shadow-sm∫ p-4"
+            >
+                {% icon "github" class="w-6 sm:w-8 h-6 sm:h-8" %}
+            </a>
+            <a
+                href="https://twitter.com/NangialaiStoman"
+                target="__blank"
+                class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg shadow-sm∫ p-4"
+            >
+                {% icon "twitter" class="w-6 sm:w-8 h-6 sm:h-8" %}
+            </a>
+            <a
+                href="https://instagram.com/NangialaiStoman"
+                target="__blank"
+                class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg shadow-sm∫ p-4"
+            >
+                
+                {% icon "instagram" class="w-6 sm:w-8 h-6 sm:h-8" %}
+            </a>
+            <a
+                href="https://behance.net/NangialaiStoman"
+                target="__blank"
+                class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg shadow-sm∫ p-4"
+            >
+                {% icon "feather" class="w-6 sm:w-8 h-6 sm:h-8" %}
+            </a>
+        </ul>
+    </div>
+    <div class="flex justify-center items-center text-center">
+        <div class="text-lg text-ternary-dark dark:text-ternary-light">
+            &copy; Copyright 2021.
+            <a
+                href="/"
+                target="__blank"
+                class="text-secondary-dark dark:text-secondary-light font-medium"
+                >Eslam</a
+            >
+        </div>
+    </div>
+</div>
+{% endblock %}

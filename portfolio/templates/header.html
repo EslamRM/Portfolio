@@ -1,0 +1,203 @@
+{% load icon %}
+{% load static %}
+{% block content %}
+<nav id="nav" class="container mx-auto header dark:bg-ternary-dark mt-2">
+  <div class="
+        z-10
+        max-w-screen-lg
+        xl:max-w-screen-xl
+        block
+        sm:flex
+        sm:justify-between
+        sm:items-center
+      ">
+    <div class="
+          flex
+          justify-between
+          items-center
+          text-gray-400
+          hover:text-indigo-500
+          dark:hover:text-indigo-400
+          cursor-pointer
+          rounded-lg
+          bg-gray-50
+          dark:bg-ternary-dark
+          hover:bg-gray-100
+          shadow-sm∫
+        ">
+      Phone +20 01069875734
+    </div>
+
+    <div class="
+          flex
+          justify-between
+          items-center
+          text-gray-400
+          hover:text-indigo-500
+          dark:hover:text-indigo-400
+          cursor-pointer
+          rounded-lg
+          bg-gray-50
+          dark:bg-ternary-dark
+          hover:bg-gray-100
+          shadow-sm∫
+        ">
+      Email eslam4523@gmail.com
+    </div>
+    <div class="sm:flex justify-between items-center flex-col md:flex-row">
+      <ul class="flex">
+        <a href="https://github.com/NangialaiStoman" target="__blank" class="
+              text-gray-400
+              hover:text-indigo-500
+              dark:hover:text-indigo-400
+              cursor-pointer
+              rounded-lg
+              bg-gray-50
+              dark:bg-ternary-dark
+              hover:bg-gray-100
+              shadow-sm∫
+              p-1
+            ">
+          {% icon "github" class="css-class" height="25" width="25" %}
+        </a>
+        <a href="https://twitter.com/NangialaiStoman" target="__blank" class="
+              text-gray-400
+              hover:text-indigo-500
+              dark:hover:text-indigo-400
+              cursor-pointer
+              rounded-lg
+              bg-gray-50
+              dark:bg-ternary-dark
+              hover:bg-gray-100
+              shadow-sm∫
+              p-4
+            ">
+          {% icon "twitter" class="css-class" height="25" width="25" %}
+        </a>
+        <a href="https://instagram.com/NangialaiStoman" target="__blank" class="
+              text-gray-400
+              hover:text-indigo-500
+              dark:hover:text-indigo-400
+              cursor-pointer
+              rounded-lg
+              bg-gray-50
+              dark:bg-ternary-dark
+              hover:bg-gray-100
+              shadow-sm∫
+              p-4
+            ">
+          {% icon "instagram" class="css-class" height="25" width="25" %}
+        </a>
+        <a href="https://behance.net/NangialaiStoman" target="__blank" class="
+              text-gray-400
+              hover:text-indigo-500
+              cursor-pointer
+              rounded-lg
+              bg-gray-50
+              hover:bg-gray-100
+              shadow-sm∫
+              p-4
+            ">
+          {% icon "feather" class="css-class" height="25" width="25" %}
+        </a>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav id="nav" class="container mx-auto">
+  <div class="
+        z-10
+        max-w-screen-lg
+        xl:max-w-screen-xl
+        block
+        sm:flex
+        sm:justify-between
+        sm:items-center
+        my-6
+      ">
+    <div class="flex justify-between items-center">
+      <div>
+        <a href="/"><img src="{% static 'images/logo.svg' %}" style="border-radius: 10px"
+            class="w-10" alt="" />
+          <h2>eslam</h2>
+        </a>
+      </div>
+      <div class="block md:hidden" id="btn-menu">
+        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-indigo-500 hover:border-indigo-500">
+          <svg class="fill-current h-5 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="sm:flex justify-center items-center nav-el mx-auto hidden2" id="menu">
+      <a href="/projects" data-scroll="skills" class="
+            block
+            text-left text-lg
+            font-medium
+            text-primary-dark
+            dark:text-ternary-light
+            hover:text-secondary-dark
+            dark:hover:text-secondary-light
+            md:mx-6
+            mb-2
+            sm:py-2
+          ">Skills</a>
+          <a href="/projects" data-scroll="projects" class="
+            block
+            text-left text-lg
+            font-medium
+            text-primary-dark
+            dark:text-ternary-light
+            hover:text-secondary-dark
+            dark:hover:text-secondary-light
+            md:mx-6
+            mb-2
+            sm:py-2
+          ">Projects</a>
+      <a href="/contact" data-scroll="contact" class="
+            block
+            text-left text-lg
+            font-medium
+            text-primary-dark
+            dark:text-ternary-light
+            hover:text-secondary-dark
+            dark:hover:text-secondary-light
+            md:mx-5
+            mb-2
+            sm:py-2
+          ">Contact</a>
+          <a href="{% url 'resume' %}" class="
+            block
+            text-left text-lg
+            font-medium
+            text-primary-dark
+            dark:text-ternary-light
+            hover:text-secondary-dark
+            dark:hover:text-secondary-light
+            md:mx-5
+            mb-2
+            sm:py-2
+          ">Resume</a>
+    </div>
+    <div class="lg:flex items-center flex-col sm:flex-row">
+    <div style="position: relative;">
+      <button id="switch" class="
+            text-md
+            font-medium
+            bg-gray-50
+            hover:bg-gray-100
+            text-white
+            shadow-sm
+            rounded-lg
+            p-2
+            switch
+          "
+          >
+          {% icon "moon" class="w-4 sm:w-6 h-4 sm:h-6 text-black moon hover:text-indigo-500" %}
+          {% icon "sun" class="w-4 sm:w-6 h-4 sm:h-6 text-black sun hidden hover:text-indigo-500" %}
+      </button>
+    </div>
+  </div>
+  </div>
+  <!-- Hire me modal end -->
+</nav>
+{% endblock %}

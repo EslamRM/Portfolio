@@ -1,0 +1,224 @@
+{% load static %} {% load icon %} {% block content %}
+<div id="contact" class="pt-20 section">
+  <div class="text-center">
+    <h2
+      class="
+        text-3xl
+        sm:text-5xl
+        font-semibold
+        mb-3
+        text-ternary-dark
+        dark:text-ternary-light
+      "
+    >
+      Contact
+  </h2>
+    <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
+      Get In Touch
+    </p>
+  </div>
+  <div class="container mx-auto sm:flex py-5 sm:py-10 mt-3 sm:mt-3">
+    <div 
+    class="w-full sm:w-1/2"
+    data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"
+    >
+      <div class="leading-loose">
+        <form
+          class="
+            max-w-xl
+            m-4
+            p-6
+            sm:p-10
+            bg-secondary-light
+            dark:bg-secondary-dark
+            rounded-xl
+            shadow-xl
+            text-left
+          "
+        >
+          <p
+            class="
+              text-2xl
+              font-semibold
+              mb-8
+            "
+          >
+            Contact Form
+          </p>
+          <div class="">
+            <label
+              class="
+                block
+                text-lg
+                mb-2
+              "
+              for="name"
+              >Full Name</label
+            >
+            <input
+              class="
+                w-full
+                px-5
+                py-2
+                border-0
+                rounded-md
+                shadow-sm
+                text-md
+              "
+              id="name"
+              name="name"
+              type="text"
+              required=""
+              placeholder="Your Name"
+              aria-label="Name"
+            />
+          </div>
+          <div class="mt-6">
+            <label
+              class="
+                block
+                text-lg
+                mb-2
+              "
+              for="email"
+              >Email</label
+            >
+            <input
+              class="
+                w-full
+                px-5
+                py-2
+                border-0
+                rounded-md
+                shadow-sm
+                text-md
+              "
+              id="email"
+              name="email"
+              type="text"
+              required=""
+              placeholder="Your Email"
+              aria-label="Email"
+            />
+          </div>
+          <div class="mt-6">
+            <label
+              class="
+                block
+                text-lg 
+                mb-2
+              "
+              for="subject"
+              >Subject</label
+            >
+            <input
+              class="
+                w-full
+                px-5
+                py-2
+                border-0
+                rounded-md
+                shadow-sm
+                text-md
+              "
+              id="subject"
+              name="subject"
+              type="text"
+              required=""
+              placeholder="Subject"
+              aria-label="Subject"
+            />
+          </div>
+
+          <div class="mt-6">
+            <label
+              class="
+                block
+                text-lg
+                mb-2
+              "
+              for="message"
+              >Message</label
+            >
+            <textarea
+              class="
+                w-full
+                px-5
+                py-2
+                border-0
+                focus:border-0
+                rounded-md
+                shadow-sm
+                text-md
+              "
+              id="message"
+              name="message"
+              cols="2"
+              rows="2"
+            ></textarea>
+          </div>
+
+          <div class="mt-6">
+            <button
+              class="
+                px-4
+                py-2.5
+                text-white
+                font-medium
+                tracking-wider
+                bg-indigo-500
+                hover:bg-indigo-600
+                rounded-lg
+              "
+              type="submit"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="w-full sm:w-1/2">
+      <div class="text-left max-w-xl px-6">
+        <h2
+          class="
+            text-2xl
+            font-semibold
+            mt-12
+            mb-8
+          "
+        >
+          Contact details
+        </h2>
+        <ul 
+        class=""
+        data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        >
+          <li class="flex">
+            {% icon "map-pin" class="w-6 sm:w-8 h-6 sm:h-8 w-5 mr-4 text-gray-400" %}
+            <p class="text-lg mb-4 text-gray-400">
+              Egypt BaniSuef
+            </p>
+          </li>
+          <li class="flex">
+            {% icon "mail" class="w-6 sm:w-8 h-6 sm:h-8 w-5 mr-4 text-gray-400" %}
+            <p class="text-lg mb-4 text-gray-400">
+              eslam4523@gmail.com
+            </p>
+          </li>
+          <li class="flex">
+            {% icon "phone" class="w-6 sm:w-8 h-6 sm:h-8 w-5 text-gray-400 mr-4" %}
+            <p class="text-lg mb-4 text-gray-400">
+              +2001069875734
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,60 @@
+{% load static %}
+{% load icon %}
+{% block content %}
+<!-- Projects start -->
+<section class="container pt-20 sm:pt-28 section mx-auto" id="projects">
+    <div class="text-center">
+        <h2 class="text-3xl sm:text-5xl font-semibold mb-3 text-ternary-dark dark:text-ternary-light">
+            Recent Projects
+        </h2>
+        <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
+            Some of the projects I have successfully completed
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 mt-24 sm:gap-10">
+        <a href="https://vuengo.herokuapp.com/" target="__blank"
+            class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
+            data-aos="zoom-in-left"
+            >
+            <div>
+                <img src="{% static 'images/go.png' %}" alt="" class="rounded-t-3xl border-none" />
+            </div>
+            <div class="text-center px-4 py-6">
+                <p class="text-2xl text-ternary-dark dark:text-ternary-light font-semibold mb-2">
+                    Go Store Ecommerce Website
+                </p>
+                <span class="text-lg text-ternary-dark dark:text-ternary-light">Web Application</span>
+            </div>
+        </a>
+        <a href="https://eshhnli-app.herokuapp.com/" target="__blank"
+            class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
+            data-aos="zoom-in-up"
+            >
+            <div>
+                <img src="{% static 'images/ecommerce-develop.png' %}" alt="" class="rounded-t-3xl border-none" />
+            </div>
+            <div class="text-center px-4 py-6">
+                <p class="text-2xl text-ternary-dark dark:text-ternary-light font-semibold mb-2">
+                    E-Shhnli Ecommerce Website
+                </p>
+                <span class="text-lg text-ternary-dark dark:text-ternary-light">Web Application</span>
+            </div>
+        </a>
+        <a href="/" target="__blank"
+            class="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
+            data-aos="zoom-in-right"
+            >
+            <div>
+                <img src="{% static 'images/ui-project-1.jpg' %}" alt="" class="rounded-t-3xl border-none" />
+            </div>
+            <div class="text-center px-4 py-6">
+                <p class="text-2xl text-ternary-dark dark:text-ternary-light font-semibold mb-2">
+                    Portfolio
+                </p>
+                <span class="text-lg text-ternary-dark dark:text-ternary-light">UI / Frontend</span>
+            </div>
+        </a>
+</section>
+<!-- Projects end -->
+{% endblock content %}

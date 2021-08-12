@@ -1,0 +1,28 @@
+{% load icon %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{% block title %} Eslam - {% endblock %}Home</title>
+	<link rel="icon" href="{% static 'images/favicon.png' %}" />
+	<link rel="stylesheet" href="{% static 'css/app.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body class="bg-grey-lightest font-serif leading-normal tracking-normal" id="body">
+	{% block content %}{% endblock %}
+	<!-- to top button -->
+	<a id="button"></a>
+	<!-- script files -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/typed.js' %}"></script>
+	<script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>
